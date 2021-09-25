@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<configuration>
+	<appender name = "STDOUT" class = "ch.qos.logback.core.ConsoleAppender">
+		<encode>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}{%level}{%thread}{%logger:%line}%msg%n
+			</pattern>
+		</encode>
+	</appender>
+	<logger name = "org.springframework" level = "INFO" />
+	<logger name = "com.springdemo.core" level = "WARN" />
+	<root>
+		<appender-ref ref = "STDOUT" />
+	</root>
+</configuration>
