@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 import com.springdemo.core.component.DemoBean;
+import com.springdemo.core.component.EmployeeBean;
 import com.springdemo.core.controller.HelloRestController;
 
 @SpringBootApplication
@@ -19,7 +20,10 @@ public class SpringCoreConceptsApplication {
 		DemoBean demoBean = context.getBean(DemoBean.class);
 		logger.debug("Demo Bean=" + demoBean.toString());
 		System.out.println(context.getBean(HelloRestController.class));
-		
+		EmployeeBean employeeBean=context.getBean(EmployeeBean.class);
+		employeeBean.setEid(104);
+		employeeBean.setEname("Spring Framework Guru");
+		employeeBean.showEmployeeDetails();
 	}
 
 }
