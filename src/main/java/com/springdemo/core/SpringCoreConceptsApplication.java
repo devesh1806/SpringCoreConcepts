@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 import com.springdemo.core.component.DemoBean;
-import com.springdemo.core.component.HelloRestController;
+import com.springdemo.core.controller.HelloRestController;
 
 @SpringBootApplication
 public class SpringCoreConceptsApplication {
